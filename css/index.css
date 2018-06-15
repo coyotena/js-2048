@@ -89,7 +89,7 @@ html, body {
 }
 
 .gamecont .cell {
-    padding: .05rem;
+    /*padding: .05rem;*/
     background: #0f1;
     box-sizing: border-box;
     display: table;
