@@ -133,7 +133,7 @@ let computeScore = () => {
     total.innerHTML = totalScore;
     if (totalScore > +history.innerHTML) {
         history.innerHTML = totalScore;
-        freHistory.style.display = block;
+        freHistory.style.display = 'block';
     }
 };
 //筛选同一方向的cell数组
