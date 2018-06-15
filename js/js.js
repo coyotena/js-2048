@@ -43,3 +43,6 @@ let gameRender = (function () {
     }
 })();
 startRender.init();
+document.ontouchstart = document.ontouchmove = document.ontouchend = (ev) => {
+    ev.preventDefalut ? ev.preventDefalut() : ev.returnValue = false;
+};
