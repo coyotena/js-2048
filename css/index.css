@@ -84,7 +84,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: .8rem;
+    margin: .4rem;
     flex-wrap: wrap;
 }
 
