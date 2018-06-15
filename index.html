@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>coyote-2048</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        (() => {
+            let winH = document.documentElement.clientWidth;
+            if(winH > 640){
+                document.documentElement.style.fontSize = 100 + 'px';
+                return;
+            }
+            document.documentElement.style.fontSize = winH / 640 * 100 + 'px';
+        })();
+    </script>
+</head>
+<body>
+<div class="container">
+    <section class="start" id="start">
+        <h2 class="title">
+            <span class="block auto">coyote</span>
+            <span class="block titsel">选择模式</span>
+        </h2>
+        <div class="selModule">
+            <input type="button" value="4&times;4格式" class="moduBtn" id="fourBtn" data-cell="4">
+            <input type="button" value="5&times;5格式" class="moduBtn" id="fiveBtn" data-cell="5">
+        </div>
+    </section>
+    <section class="game" id="game">
+        <h2 class="score">
+            <p class="handle">
+                <span class="goBack" id="goBack">&curvearrowleft;返回主界面</span>
+                <span class="reset" id="reset">&circlearrowleft;重新开始</span>
+            </p>
+            <span>历史最高分：<span id="history">0</span></span>
+            <span>目前分数：<span id="total">0</span></span>
+        </h2>
+        <div class="gamecont" id="gamecont"></div>
+    </section>
+    <section class="warpmark" id="wrapmark">
+        <div class="wrapcon">
+            <h2 class="overtit">Game Over!!!</h2>
+            <p class="none" id="freHistory">恭喜你刷新历史记录</p>
+            <p>当前分数：<span id="overScore">0</span></p>
+            <input type="button" value="&curvearrowleft;返回主界面" class="wrapbtn" id="markBack">
+            <input type="button" value="&circlearrowleft;重新开始" class="wrapbtn" id="markReset">
+        </div>
+    </section>
+</div>
+<script src="js/utils.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>

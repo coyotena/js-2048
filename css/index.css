@@ -1,0 +1,144 @@
+html {
+    font-size: 100px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #abcdef;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    max-width: 640px;
+    /*padding-top: 1.5rem;*/
+    letter-spacing: .02rem;
+    margin: 0 auto;
+}
+
+.start, .game, .wrapcon {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.start {
+    height: 35%;
+}
+
+.game {
+    height: 70%;
+}
+
+.title {
+    font-size: .24rem;
+    padding: 5% 0;
+    text-align: center;
+    line-height: .5rem;
+}
+
+.goBack {
+    color: #f00;
+}
+
+.selModule {
+    width: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.moduBtn {
+    box-sizing: border-box;
+    border: .02rem solid #333;
+    color: #fff;
+    font-weight: bold;
+    font-size: .24rem;
+    line-height: .5rem;
+    width: 100%;
+    background: #3f5;
+    margin-bottom: .2rem;
+    letter-spacing: .02rem;
+}
+
+.score {
+    margin-top: .3rem;
+    padding: 0 0.45rem;
+}
+
+.gamecont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: .8rem;
+    flex-wrap: wrap;
+}
+
+.gamecont .cell {
+    padding: .05rem;
+    background: #0f1;
+    box-sizing: border-box;
+    display: table;
+}
+
+.cell > .number {
+    width: 100%;
+    height: 100%;
+    border-radius: .05rem;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: .22rem;
+    font-weight: bold;
+    border: 1px solid #06f;
+}
+
+.cell > .number.numcolor {
+    background: #af0;
+}
+
+.warpmark {
+    /*display: none;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.wrapcon {
+    height: 50%;
+    display: block;
+    text-align: center;
+    color:#fff;
+    line-height: .8rem;
+}
+.overtit{
+    line-height: .6rem;
+    font-weight: bold;
+}
+.wrapbtn{
+    border:0;
+    background:#f4f4f4;
+    padding:0 .5rem;
+    display: inline-block;
+    line-height: .8rem;
+    color:#333;
+    min-width:60%;
+    font-size: .4rem;
+    margin-bottom:.15rem;
+}
